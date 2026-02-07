@@ -4,14 +4,17 @@ import { MdOutlineEditNote, MdOutlineDashboard } from "react-icons/md";
 import { HiOutlineBookOpen } from "react-icons/hi2";
 import { FaRegUserCircle } from "react-icons/fa";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
-import { NavLink } from "react-router";
+import { Link, Links } from "react-router";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 sm:gap-8">
+      <div
+        className="max-w-300
+mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 sm:gap-8"
+      >
         {/* Logo */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <div className="text-primary">
@@ -38,19 +41,17 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-4">
-          <a
+          <Link
+            to="explore"
             className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-            href="#"
           >
             Explore
-          </a>
+          </Link>
 
-          <NavLink to="/dashboard">
-            <button className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
-              <MdOutlineDashboard className="text-lg" />
-              <span>Dashboard</span>
-            </button>
-          </NavLink>
+          <button className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+            <MdOutlineDashboard className="text-lg" />
+            <Link to="/dashboard">Dashboard</Link>
+          </button>
 
           <button className="flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all shadow-sm">
             <MdOutlineEditNote className="text-lg" />
@@ -59,7 +60,7 @@ const Header = () => {
 
           <button className="flex items-center gap-2 text-sm font-bold text-gray-900 dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
             <FaRegUserCircle className="text-xl" />
-            <span>Sign In</span>
+            <Link to="sign-in">Sign In</Link>
           </button>
         </nav>
 
@@ -121,7 +122,9 @@ const Header = () => {
 
             <button className="w-full flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
               <FaRegUserCircle className="text-xl" />
-              <span className="font-medium">Sign In</span>
+              <Link to="login" className="font-medium">
+                Log In
+              </Link>
             </button>
           </div>
         </div>
