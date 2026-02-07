@@ -10,7 +10,8 @@ const Header = () => {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md">
-            <div className="max-w-[1200px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 sm:gap-8">
+            <div className="max-w-300
+mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 sm:gap-8">
                 {/* Logo */}
                 <div className="flex items-center gap-2 sm:gap-3 shrink-0">
                     <div className="text-primary">
