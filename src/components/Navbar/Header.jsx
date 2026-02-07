@@ -4,6 +4,7 @@ import { MdOutlineEditNote, MdOutlineDashboard } from 'react-icons/md';
 import { HiOutlineBookOpen } from 'react-icons/hi2';
 import { FaRegUserCircle } from 'react-icons/fa';
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
+import { Link, Links } from 'react-router';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -57,7 +58,7 @@ mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 sm:gap-8">
                     
                     <button className="flex items-center gap-2 text-sm font-bold text-gray-900 dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
                         <FaRegUserCircle className="text-xl" />
-                        <span>Sign In</span>
+                        <Link to='sign-in'>Sign In</Link>
                     </button>
                 </nav>
 
@@ -119,7 +120,7 @@ mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 sm:gap-8">
 
                         <button className="w-full flex items-center gap-3 px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
                             <FaRegUserCircle className="text-xl" />
-                            <span className="font-medium">Sign In</span>
+                            <Link to='login' className="font-medium">Log In</Link>
                         </button>
                     </div>
                 </div>
