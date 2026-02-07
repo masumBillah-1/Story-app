@@ -6,7 +6,7 @@ import { PiHandsClappingLight } from 'react-icons/pi';
 import { FaRegComment } from 'react-icons/fa6';
 import { BsBookmarkPlus } from 'react-icons/bs';
 
-const SingleArticlePage = () => {
+const ArticlePage = () => {
   const data = {
     title: "The Silent Echoes of the Valley",
     author: {
@@ -165,4 +165,4 @@ const SingleArticlePage = () => {
   );
 };
 
-export default SingleArticlePage;
+export default ArticlePage;
