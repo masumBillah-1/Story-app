@@ -39,12 +39,12 @@ mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 sm:gap-8">
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-4">
-                    <a
+                    <Link to="explore"
                         className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                        href="#"
+                        
                     >
                         Explore
-                    </a>
+                    </Link>
                     
                     <button className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
                         <MdOutlineDashboard className="text-lg" />
