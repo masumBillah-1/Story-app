@@ -1,5 +1,5 @@
 import React from 'react';
-import loginImg from '../assets/login.png'; 
+import loginImg from '../../assets/login.png'
 
 const Login = () => {
   return (
@@ -12,24 +12,7 @@ const Login = () => {
           className="h-full w-full object-cover"
         />
        
-        <div className="absolute inset-0 bg-blue-900/30 p-16 flex flex-col justify-center text-white">
-          <div className="flex items-center gap-2 mb-8">
-            <span className="text-2xl font-bold">📖 StoryFlow</span>
-          </div>
-          <blockquote className="max-w-md">
-            <p className="italic text-5xl font-serif leading-tight">
-              "A professional writer is an amateur who didn't quit."
-            </p>
-            <footer className="mt-6 text-xl opacity-80">— Richard Bach</footer>
-          </blockquote>
           
-         
-          <div className="flex gap-2 mt-12">
-            <div className="h-1 w-10 bg-white rounded-full"></div>
-            <div className="h-1 w-4 bg-white/40 rounded-full"></div>
-            <div className="h-1 w-4 bg-white/40 rounded-full"></div>
-          </div>
-        </div>
       </div>
 
       <div className="flex flex-col justify-center w-full px-8 md:px-24 lg:w-1/2 bg-white">
